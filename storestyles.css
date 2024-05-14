@@ -1,0 +1,219 @@
+.productos {
+  display: flex;
+  flex-direction: column;
+}
+  
+.producto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 95%;
+  max-width: 1300px;
+  padding: 70px 0px;
+}
+  
+.title-producto {
+  display: flex;
+  gap: 10px;
+  padding-bottom: 20px;
+  width: 100%;
+}
+  
+.title-producto-h2 {
+  color: var(--grey-claro);
+  height: 34px;
+  display: flex;
+  align-items: flex-end;
+}
+  
+.subtitle-producto-p {
+  height: 31px;
+  display: flex;
+  align-items: flex-end;
+  font-size: 14px;
+  color: var(--blue);
+}
+  
+/* Card's */
+  
+.title-productos {
+  display: flex;
+  padding-bottom: 20px;
+  gap: 20px;
+}
+  
+.productos-descripcion {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+  
+.card-producto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+  border-radius: 10px;
+  border: 1px solid #00a8ff;
+  width: 224px;
+  height: 400px;
+  background: rgb(255, 255, 255, 0.6);
+  transition: all 0.2s ease-in-out;
+}
+  
+.producto-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 10px; 
+  border-top-right-radius: 10px;
+  width: 100%;
+  height: 220px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+  
+.producto-precio {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  color: #000;
+}
+  
+.p-productos-cuotas {
+  font-size: 13px;
+  color: var(--precio);
+}
+  
+.p-productos-envio-gratis {
+  color: var(--precio);
+  font-weight: bold;
+}
+  
+.card-producto:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
+}
+  
+/* accesorios */
+  
+#accesorios {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+  
+#accesorio1-img {
+  background-image: url(./img/a01.png);
+}
+  
+#accesorio2-img {
+  background-image: url(./img/a02.png);
+}
+  
+#accesorio3-img {
+  background-image: url(./img/a03.png);
+}
+  
+#accesorio4-img {
+  background-image: url(./img/a04.png);
+}
+  
+#accesorio5-img {
+  background-image: url(./img/a05.png);
+}
+  
+/* monitores */
+  
+#monitoes {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+  
+#monitor1-img {
+  background-image: url(./img/m01.png);
+}
+  
+#monitor2-img {
+  background-image: url(./img/m02.png);
+}
+  
+#monitor3-img {
+  background-image: url(./img/m03.png);
+}
+  
+#monitor4-img {
+  background-image: url(./img/m04.png);
+}
+  
+#monitor5-img {
+  background-image: url(./img/m05.png);
+}
+  
+/* notebooks */
+  
+#notebooks {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+  
+#notebook1-img {
+  background-image: url(./img/n01.png);
+}
+  
+#notebook2-img {
+  background-image: url(./img/n02.png);
+}
+  
+#notebook3-img {
+  background-image: url(./img/n03.png);
+}
+  
+#notebook4-img {
+  background-image: url(./img/n04.png);
+}
+  
+#notebook5-img {
+  background-image: url(./img/n05.png);
+}
+  
+/* lavarropas
+  
+#lavarropas {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+  
+#lav1-img {
+  background-image: url(./img/fondo1.png);
+}
+  
+#lav2-img {
+  background-image: url(./img/fondo1.png);
+}
+  
+#lav3-img {
+  background-image: url(./img/fondo1.png);
+}
+  
+#lav4-img {
+  background-image: url(./img/fondo1.png);
+}
+  
+#lav5-img {
+  background-image: url(./img/fondo1.png);
+}
+
+*/

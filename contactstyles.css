@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+
+:root {
+  --color-white: #fbfbfb;
+  --color-acent: #0d6efd;
+  --color-dark: #333333;
+  --color-transparent: rgba(255, 255, 255, 0.2);
+}
+
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("img/fondo2.png");
+  background-size: cover;
+  background-position: center center;
+  color: var(--text-color);
+  background-attachment: fixed;
+  height: 100%;
+}
+p {
+  margin: 0;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+.container {
+  width: 100%;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+}
+
+#miForm {
+  display: block;
+  width: 60%;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: var(--color-transparent);
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 40px 3px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 0px 40px 3px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 40px 3px rgba(0, 0, 0, 0.25);
+  text-align: left;
+}
+
+.field {
+  color: var(--color-white);
+  margin-top: 10px;
+  margin-bottom: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.field span {
+  color: #f84e23;
+  font-size: 14px;
+}
+
+input,
+select,
+textarea {
+  padding: 10px;
+  margin: 10px 0px;
+  font-family: inherit;
+  color: var(--color-dark);
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  font-family: inherit;
+}
+
+label {
+  align-items: center;
+  font-size: inherit;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border: none;
+  outline: none;
+  box-shadow: 0px 0px 20px 4px rgba(0, 0, 0, 0.2);
+  transition: 0.1s ease-out;
+}
+
+.input-radio,
+.input-checkbox {
+  margin-right: 10px;
+}
+
+.mybtn {
+  display: block;
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: none;
+  outline: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
+  border-style: none;
+  text-align: center;
+  background-color: var(--color-acent);
+  color: var(--color-white);
+}
+
+.mybtn:hover {
+  box-shadow: 0px 0px 20px 4px rgba(0, 0, 0, 0.2);
+  background-color: #5b94eb;
+  transition: 0.1s ease;
+}
+
+input::placeholder,
+select::placeholder,
+textarea::placeholder {
+  opacity: 0.8;
+}
+
+p:selected {
+  opacity: 0.5;
+}
+
+.imagen {
+  display: block;
+  width: 60%;
+  overflow: hidden;
+  padding: 20px 100px 100px 100px;
+  margin: auto;
+  margin-bottom: -8px;
+  background-color: var(--color-transparent);
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  -webkit-box-shadow: 0px 0px 40px 3px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 0px 40px 3px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 40px 3px rgba(0, 0, 0, 0.25);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./img/contacto.png") no-repeat center;
+  background-size: cover;
+  opacity: 0.7;
+}
+
+.table-container {
+  display: block;
+  margin: auto;
+  padding: 20px;
+  width: 100%;
+  max-width: 1000px; /* Ancho máximo para la tabla */
+  overflow-x: auto; /* Permite desplazamiento horizontal en pantallas pequeñas */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: none;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+th, td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: none;
+  color: #00a8ff;
+}
+
+@media (max-width: 768px) {
+  #survey-form {
+    width: 60%;
+  }
+
+  .table-container {
+    max-width: 700px; /* Ancho máximo para la tabla */
+    margin: 20px; /* Centrar la tabla en la página */
+    overflow-x: auto; /* Permite desplazamiento horizontal en pantallas pequeñas */
+  }
+
+  table {
+    max-width: 700px;
+    box-shadow: none;
+  }
+
+  th, td {
+    padding: 8px;
+
+  }
+
+  th {
+    background-color: none;
+  }
+}
+
+@media (max-width: 390px) {
+  #survey-form {
+    width: 80%;
+  }
+
+  .table-container {
+    max-width: 300px; /* Ancho máximo para la tabla */
+    margin: 20px; /* Centrar la tabla en la página */
+    overflow-x: auto; /* Permite desplazamiento horizontal en pantallas pequeñas */
+  }
+
+  table {
+    max-width: 300px;
+    box-shadow: none;
+  }
+
+  th, td {
+    padding: 8px;
+  }
+
+  th {
+    background-color: none;
+  }
+
+  td {
+    font-size: 12px;
+    text-align: center;
+  }
+
+}
